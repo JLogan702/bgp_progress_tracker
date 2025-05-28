@@ -1,37 +1,29 @@
-
-body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 40px;
-    background-color: #f9f9f9;
-    color: #333;
-}
-h1, h2 {
-    color: #2c3e50;
-}
-table {
-    width: 100%;
-    border-collapse: collapse;
-    margin-bottom: 40px;
-}
-th, td {
-    border: 1px solid #ddd;
-    padding: 10px;
-    text-align: center;
-}
-th {
-    background-color: #f1f1f1;
-}
-.stoplight-img {
-    height: 30px;
-}
-.navbar {
-    margin-bottom: 20px;
-}
-.navbar select {
-    padding: 10px;
-    font-size: 16px;
+body.gradient-background {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(to right, #e0eafc, #cfdef3);
+    margin: 0;
+    padding: 2em;
+    color: #222;
 }
 .container {
-    max-width: 1200px;
-    margin: auto;
+    max-width: 800px;
+    margin: 0 auto;
+    background: white;
+    padding: 2em;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
 }
+.status-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+.metric {
+    font-size: 1.8em;
+    font-weight: bold;
+}
+.warning-icon {
+    color: #d97706;
+}
+a { color: #004aad; text-decoration: underline; }

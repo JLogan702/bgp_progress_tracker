@@ -2,95 +2,36 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Program Summary</title>
+    <title>Program Readiness and Preparedness</title>
     <link rel="stylesheet" href="styles/dashboard.css">
-    <style>
-        body {
-            background: linear-gradient(to bottom right, #f7f9fc, #dce3f2);
-            font-family: Arial, sans-serif;
-            margin: 20px;
-            color: #333;
-        }
-        .status-box {
-            background: white;
-            border-radius: 12px;
-            padding: 30px;
-            text-align: center;
-            margin-bottom: 40px;
-            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
-        }
-        .status-display {
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            gap: 40px;
-            margin-top: 20px;
-        }
-        .status-text {
-            font-size: 36px;
-            font-weight: bold;
-            color: #e6b800;
-            display: flex;
-            align-items: center;
-        }
-        h2 {
-            margin-top: 40px;
-        }
-        ul {
-            line-height: 1.8;
-        }
-        select {
-            margin-bottom: 20px;
-            padding: 6px;
-            font-size: 16px;
-        }
-    </style>
-    <script>
-        function navigate(value) {
-            if (value) {
-                window.location.href = value;
-            }
-        }
-    </script>
 </head>
-<body>
-
-    <select onchange="navigate(this.value)">
-        <option value="index.html" selected>Program Summary</option>
-        <option value="sprint_readiness.html">Sprint Readiness</option>
-        <option value="backlog_health.html">Backlog Health</option>
-        <option value="dependency_report.html">Dependency Report</option>
-    </select>
-
-    <div class="status-box">
-        <h2>🚦 Program Readiness and Preparedness</h2>
-        <div class="status-display">
-            <img src="img/blinking_yellow.gif" alt="Yellow Stoplight" height="160">
-            <div class="status-text">⚠️ Moderate Risk</div>
+<body class="gradient-background">
+    <div class="container">
+        <h1>🚦 Program Readiness and Preparedness</h1>
+        <div class="status-center">
+            <img src="img/blinking_yellow.gif" alt="Yellow Stoplight" height="140">
+            <div class="metric warning-icon">⚠️ Moderate Risk</div>
         </div>
-        <div style="margin-top: 20px;">
-            <p><strong>Sprint Readiness:</strong> 53%</p>
-            <p><strong>Backlog Health:</strong> 78%</p>
-        </div>
+        <p><strong>Sprint Readiness:</strong> 53%<br>
+        <strong>Backlog Health:</strong> 78%</p>
+
+        <h2>🔎 Executive Summary</h2>
+        <p>The program currently shows moderate readiness for the upcoming sprint cycle. While backlog grooming is close to target, a significant portion of sprint stories remain insufficiently refined.</p>
+
+        <h2>📊 Metric Breakdown</h2>
+        <ul>
+            <li>Total Stories in Future Sprints: 83</li>
+            <li>Ready for Dev or To Do: 44</li>
+            <li>Total Backlog Stories: 70</li>
+            <li>Refined (New, Grooming, Ready): 55</li>
+        </ul>
+
+        <h2>📚 References & Standards</h2>
+        <ul>
+            <li><a href="https://www.scrum.org/resources/blog/definition-ready" target="_blank">Definition of Ready – Scrum.org</a></li>
+            <li><a href="https://www.scrum.org/resources/blog/backlog-refinement-grooming-best-practices" target="_blank">Backlog Refinement Best Practices – Scrum.org</a></li>
+            <li><a href="https://resources.scrumalliance.org/Article/why-definition-ready-matters" target="_blank">Scrum Alliance: Why Definition of Ready Matters</a></li>
+        </ul>
     </div>
-
-    <h2>🔎 Executive Summary</h2>
-    <p>The program currently shows moderate readiness for the upcoming sprint cycle. While backlog grooming is close to target, a significant portion of sprint stories remain insufficiently refined. To increase predictability and throughput, each team should focus on finalizing refinement of upcoming sprint tickets—especially in Engineering and Design.</p>
-
-    <h2>📊 Metric Breakdown</h2>
-    <ul>
-        <li><strong>Total Stories in Future Sprints:</strong> 83</li>
-        <li><strong>Ready for Dev or To Do:</strong> 44</li>
-        <li><strong>Total Backlog Stories:</strong> 70</li>
-        <li><strong>Refined (New, Grooming, Ready):</strong> 55</li>
-    </ul>
-
-    <h2>📚 References & Standards</h2>
-    <ul>
-        <li><a href="https://www.scrum.org/resources/what-is-a-definition-of-ready" target="_blank">Definition of Ready – Scrum.org</a></li>
-        <li><a href="https://www.scrum.org/resources/blog/backlog-refinement-best-practices" target="_blank">Backlog Refinement Best Practices – Scrum.org</a></li>
-        <li><a href="https://www.scrumalliance.org/community/articles/2020/june/why-definition-of-ready-matters" target="_blank">Scrum Alliance: Why Definition of Ready Matters</a></li>
-    </ul>
-
 </body>
 </html>
