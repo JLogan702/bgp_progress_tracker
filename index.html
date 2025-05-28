@@ -1,30 +1,30 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Overall Program Health</title>
+    <title>Program Summary</title>
     <link rel="stylesheet" href="styles/dashboard.css">
+    <style>
+        .status-box img {
+            width: 75px;
+            height: auto;
+        }
+    </style>
 </head>
 <body>
-    <div class="nav">
-        <label for="report-select">Navigate:</label>
-        <select id="report-select" onchange="location = this.value;">
-            <option value="index.html" selected>Program Summary</option>
-            <option value="sprint_readiness.html">Sprint Readiness</option>
-            <option value="backlog_health.html">Backlog Health</option>
-            <option value="dependency_report.html">Dependency Report</option>
-        </select>
-    </div>
-
-    <h1>🚦 Overall Program Health</h1>
-    <p>This summary reflects aggregated sprint readiness and backlog grooming across all delivery teams.</p>
+    <select onchange="location = this.value;">
+        <option value="index.html" selected>Program Summary</option>
+        <option value="sprint_readiness.html">Sprint Readiness</option>
+        <option value="backlog_health.html">Backlog Health</option>
+        <option value="dependency_report.html">Dependency Report</option>
+    </select>
 
     <div class="status-box yellow">
         <p><strong>OVERALL STATUS</strong></p>
-        <img class="blink-img" src="img/blinking_yellow.gif" alt="Yellow Stoplight" height="60">
+        <img src="img/blinking_yellow.gif" alt="Yellow Stoplight">
         <div class="metric">⚠️ Moderate Risk</div>
-        <p>Sprint Readiness: 53%<br>
-           Backlog Health: 78%</p>
+        <p>Sprint Readiness: 53%<br>Backlog Health: 78%</p>
     </div>
 
     <h2>🔎 Executive Summary</h2>
@@ -42,7 +42,7 @@
     <ul>
         <li><a href="https://www.scrum.org/resources/blog/definition-ready" target="_blank">Definition of Ready – Scrum.org</a></li>
         <li><a href="https://www.scrum.org/resources/backlog-refinement-best-practices" target="_blank">Backlog Refinement Best Practices – Scrum.org</a></li>
-        <li><a href="https://resources.scrumalliance.org/Article/why-definition-ready-matters" target="_blank">Scrum Alliance: Why Definition of Ready Matters</a></li>
+        <li><a href="https://www.scrumalliance.org/learn-about-scrum/scrum-roles/product-owner/definition-of-ready" target="_blank">Scrum Alliance: Why Definition of Ready Matters</a></li>
     </ul>
 </body>
 </html>
