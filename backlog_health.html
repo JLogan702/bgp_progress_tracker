@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Backlog Health</title>
+    <link rel="stylesheet" href="styles/dashboard.css">
+</head>
+<body>
+    <div class="navbar">
+        <select onchange="location = this.value;">
+            <option value="index.html">Program Summary</option>
+            <option value="sprint_readiness.html">Sprint Readiness</option>
+            <option value="backlog_health.html" selected>Backlog Health</option>
+            <option value="dependency_report.html">Dependency Report</option>
+        </select>
+    </div>
+    <div class="container">
+        <h1>Backlog Health by Team</h1>
+        <p>This view shows the percentage of backlog stories (not in a sprint) that are refined. Refined statuses include: 'New', 'Grooming', 'Refinement', and 'Ready for Development'.</p>
+        <table>
+            <tr>
+                <th>Team</th>
+                <th>Total Backlog Stories</th>
+                <th>Groomed Stories</th>
+                <th>Backlog Grooming %</th>
+                <th>Status</th>
+            </tr>
+            <tr><td>Engineering - Product</td><td>13</td><td>13</td><td>100.0%</td><td><img src="img/blinking_green.gif" height="40"></td></tr>
+            <tr><td>Engineering - Platform</td><td>10</td><td>6</td><td>60.0%</td><td><img src="img/blinking_yellow.gif" height="40"></td></tr>
+            <tr><td>Design</td><td>4</td><td>4</td><td>100.0%</td><td><img src="img/blinking_green.gif" height="40"></td></tr>
+            <tr><td>Engineering - AI Ops</td><td>6</td><td>1</td><td>16.7%</td><td><img src="img/blinking_red.gif" height="40"></td></tr>
+            <tr><td>Data Science</td><td>1</td><td>1</td><td>100.0%</td><td><img src="img/blinking_green.gif" height="40"></td></tr>
+        </table>
+        <details>
+            <summary><strong>▶ How is this report calculated?</strong></summary>
+            <p><strong>Backlog Health</strong> measures how much of the backlog is in a groomed and usable state, ensuring the product owner has a supply of stories ready to feed future sprints.</p>
+            <p><strong>Formula:</strong> (Groomed Stories ÷ Total Backlog Stories) × 100</p>
+            <p><strong>Why it matters:</strong> Healthy backlogs reduce the risk of sprint planning chaos. It ensures that backlog items are refined with estimates, acceptance criteria, and business context — supporting continuous delivery.</p>
+            <p><strong>Thresholds (Industry Standard):</strong><br>
+            🟢 Green = ≥ 80% (Healthy)<br>
+            🟡 Yellow = 50–79% (Needs attention)<br>
+            🔴 Red = &lt; 50% (Unhealthy)</p>
+            <p><strong>Sources:</strong><br>
+            - Scrum.org: <a href="https://www.scrum.org">Backlog Management Best Practices</a><br>
+            - Mountain Goat Software: <a href="https://www.mountaingoatsoftware.com/agile/backlog">Agile Backlog Practices</a></p>
+        </details>
+    </div>
+</body>
+</html>
